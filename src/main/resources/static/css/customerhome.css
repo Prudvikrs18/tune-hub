@@ -1,0 +1,13 @@
+body{
+	background-color: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+label{
+	text-align: center;
+	
+}
+a{
+	border: red;
+}

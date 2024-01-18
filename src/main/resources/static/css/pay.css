@@ -1,0 +1,9 @@
+body{
+	background-color: orange;
+	display: flex;
+	text-align: center;
+}
+button[type=submit]:hover{
+	background-clip: border-box;
+	background-color: red;
+}

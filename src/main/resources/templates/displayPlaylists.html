@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+   iframe {
+       height:200px;
+       width:700;
+   
+   }
+   </style>
+</head>
+<body>
+
+		<table border="1">
+		   <thead>
+		        <tr>
+		           <th>Name</th>
+				   <th>Songs</th>
+				</tr>
+			</thead>	
+			
+			<tbody>
+			      <tr th:each="plists:${allPlaylists}">
+			         <td th:text="${plists.name}"> </td>
+			         <td >
+			            <ul>
+			                <li th:each="song : ${plists.songs}">
+			                  <span th:text="${song.name}"></span>
+			                  <audio controls>
+			                       <source th:src="${song.link}" type="audio/mpeg">
+			                  </audio>
+			            </ul>
+			            </td>
+			      </tr>   
+	    	</tbody>
+			
+		</table>
+	
+</body>
+</html>

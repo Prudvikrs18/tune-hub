@@ -1,0 +1,29 @@
+body {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	display: flex;
+	height: 100vh;
+	margin: 0px;
+	
+}
+
+label {
+	background-color: #fff;
+	border-color:black;
+	border-radius:20%;
+	box-shadow: 0 10px 10px black;
+	display: block;
+	margin: 10%;
+	max-width:50%;
+	max-height:50%;
+	text-align: center;
+}
+
+a:hover {
+	background-clip: border-box;
+}
+
+a {
+	font-family: sans-serif;
+}
